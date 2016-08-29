@@ -1,0 +1,4 @@
+http://spritespin.ginie.eu/
+License
+Code licensed under the MIT license
+http://opensource.org/licenses/MIT
