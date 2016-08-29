@@ -36,8 +36,8 @@ Live Preview:
 
 Shortcode Parameters:
 
-* To Do
-
+* imgs_folder = path to sequence images folder
+example: [spin360 imgs_folder="/wp-content/uploads/images/spin360/demoSpin360/"]
 
 == Frequently asked questions ==
 Display 3D model on wordPress page, post, or custom page, 3D model Rotation, 360 view enabled.
