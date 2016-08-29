@@ -14,6 +14,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 function spin360_enqueue_scripts() {
     // wp_register_script( 'spritespin-js', plugins_url('spritespin.min.js', __FILE__), array('jquery'));
     wp_enqueue_script( 'spritespin.min.js', plugins_url('scripts/spritespin.min.js', __FILE__), array('jquery') );
+    wp_enqueue_style( 'spin360-style', plugins_url('spin360.css', __FILE__) );
     //wp_enqueue_script( 'spritespin.min.js','/wp-content/cstm/spritespin.min.js' );    
     }
     
