@@ -1,13 +1,14 @@
 <?php
 /*
 Plugin Name: Spin360
-Plugin URI:  https://github.com/easyw/spin360
-Description: An experimental plugin to add 360 rotation support in wp
-Version:     1.0
+Plugin URI:  https://easyw.github.io/spin360/
+Description: A new plugin to add 360 rotation support in wp
+Version:     1.0.2
 Author:      Maurice
 Author URI:  https://github.com/easyw/spin360
 License:     GPL2License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
+
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 // register spin360 scripts and styles
@@ -15,8 +16,7 @@ function spin360_enqueue_scripts() {
     // wp_register_script( 'spritespin-js', plugins_url('spritespin.min.js', __FILE__), array('jquery'));
     wp_enqueue_script( 'spritespin.min.js', plugins_url('scripts/spritespin.min.js', __FILE__), array('jquery') );
     wp_enqueue_style( 'spin360-style', plugins_url('spin360.css', __FILE__) );
-    wp_enqueue_script( 'spin360.js', plugins_url('spin360.js', __FILE__) );
-    //wp_enqueue_script( 'spritespin.min.js','/wp-content/cstm/spritespin.min.js' );    
+    // wp_enqueue_script( 'spin360.js', plugins_url('spin360.js', __FILE__) );
     }
     
 add_action( 'wp_enqueue_scripts', 'spin360_enqueue_scripts' );
@@ -26,19 +26,27 @@ add_action( 'wp_enqueue_scripts', 'spin360_enqueue_scripts' );
  */
 function spin360_shortcode($atts) {
     $spin360_atts = shortcode_atts( array(
-        'imgs_folder' => '/wp-content/uploads/images/spin360/demoSpin360/',
-        'aspect_ratio' => '1.3307',
+        'imgs_folder' => '/wp-content/uploads/spin360show/spin360demo/',
+        'aspect_ratio' => '1.3333',
         'imgs_nbr' => '200'
     ), $atts, 'spin360' );
 
-    $folder = $spin360_atts[ 'imgs_folder' ];
-    $folder_url = wp_get_attachment_url( $folder );
+    $folder = "imgs_folder='".$spin360_atts[ 'imgs_folder' ]."'";
+    $folder_url = $spin360_atts[ 'imgs_folder' ];
     $imgs_nbr = $spin360_atts[ 'imgs_nbr' ];
     $aspectRatio_attr = "aspectRatio='".$spin360_atts[ 'aspect_ratio' ]."'";
+    $height = 400/$spin360_atts[ 'aspect_ratio' ];
     
-    return "<ul id='commands' ><a href='#' class='button js-reverse' ><br>Play</a></ul>
-            <div class='spritespin' ></div>"
-    ;}
+    return "<ul id='commands' ><a href='#1' class='buttonSS js-reverse' ><br>Play</a></ul><div class='spritespin' ></div><a href='#1'></a>
+<script type='text/javascript'>// <![CDATA[
+jQuery(function(){ jQuery('a.js-fullscreen').click(function(e){ e.preventDefault();jQuery('.spritespin').spritespin('api').requestFullscreen(); });jQuery('a.js-start').click(function(e){ e.preventDefault();jQuery('.spritespin').spritespin('api').startAnimation(); });jQuery('a.js-stop').click(function(e){ e.preventDefault(); jQuery('.spritespin').spritespin('api').stopAnimation(); });jQuery('a.js-reverse').click(function(e){ jQuery('.spritespin').spritespin('api').data.reverse=!jQuery('.spritespin').spritespin('api').data.reverse;jQuery('.spritespin').spritespin('api').startAnimation(); });
+var pathVar = '$folder_url';
+pathVar=pathVar+'{frame}.jpg';
+console.log(pathVar);
+jQuery('.spritespin').spritespin({width: 400, height: '$height', source: SpriteSpin.sourceArray(pathVar, { frame: [1,'$imgs_nbr'], digits: 4 }), sense: -1, responsive: true, }); 
+});
+// ]]></script>"
+;} 
 
 // register shortcode
 function spin360_register_shortcode() {
@@ -46,6 +54,5 @@ function spin360_register_shortcode() {
 }
 
 add_action( 'init', 'spin360_register_shortcode' );
-
 
 ?>

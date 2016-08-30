@@ -1,5 +1,5 @@
 === Spin360 360° 3D Model Viewer using image sequences ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: maui2wp
 Donate link: 
 Tags: 360 deg viewer, 3d viewer, 3D model viewer, 3d model display, 3D Model Viewer WordPress
 Requires at least: 4.0.1
@@ -31,21 +31,43 @@ Live Preview:
 
 == Installation ==
 
-1. To Do
+1. Upload the plugin files to the `/wp-content/plugins/spin360` directory, or Install as a regular WordPress plugin
+2. Go your Plugins page via WordPress Dashboard and activate it
+3. Use these shortcodes to post or page 
+
+   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=200 aspect_ratio=1.33333]`
+   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=200]`
+   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/"]`
+   defaults: imgs_nbr=200, aspect_ratio=1.33333
+   
+4. Use `jpg` image files to display your model as a dynamic sequence; 
+   Name your images as following: `0001.jpg, 0002.jpg, ..., 200.jpg`
+   upload your project image files in a "/wp-content/uploads/" subfolder (i.e "/wp-content/uploads/spin360show/spin360demo/")
+   via a standard FTP access
+
+5. Modify the css style to adapt some features
+   * change `spin360.css` to change some style aspect
 
 
 Shortcode Parameters:
 
-* imgs_folder = path to sequence images folder
-example: [spin360 imgs_folder="/wp-content/uploads/images/spin360/demoSpin360/"]
+* imgs_folder = folder of image sequence project; i.e.: "/wp-content/uploads/spin360show/spin360demo/"
+* imgs_nbr = any number > 1; i.e.: 200 image screenshots
+* aspect_ratio = any number i.e.: 1.3333  for 4/3 aspect ratio
+* change `spin360.css` to adapt some style aspect (as loading image or button font color)
+
 
 == Frequently asked questions ==
-Display 3D model on wordPress page, post, or custom page, 3D model Rotation, 360 view enabled.
+Display 3D model on wordPress page, post, or custom page, 3D model Rotation, 360 view enabled, based on image sequences.
 
 == Upgrade Notice ==
 
 = 1.0 =
 Basic version, still under development
+= 1.0.1 =
+Basic version updated, still under development
+= 1.0.2 =
+Basic version with shortcode, still under development
 
 == Screenshots ==
 
@@ -56,3 +78,7 @@ Basic version, still under development
 
 = 1.0 =
 * Initial release
+= 1.0.1 =
+* Basic version updated
+= 1.0.2 =
+* Basic version with shortcode

@@ -7,6 +7,6 @@
 .spritespin{
    position:relative;
 }
-.button{
+.buttonSS{
    z-index: 100; position:absolute; left:20; bottom:5; /*color:DeepSkyBlue;*/
 }
