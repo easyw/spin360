@@ -80,7 +80,8 @@ Basic version with shortcode and multiple shows, still under development
 
 == Screenshots ==
 
-1. To Do
+1. Screenshot-1.png
+2. Screenshot-2.png
 
 
 == Changelog ==
