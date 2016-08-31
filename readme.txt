@@ -19,6 +19,7 @@ Responsive Web Design
 Displays 3D model on wordPress page, post, or custom page
 3D model Rotation enabled
 Based on a sequence of images to display the product
+jQuery plugin page: http://spritespin.ginie.eu/
 
 Plugin Features
 
@@ -34,11 +35,11 @@ Live Preview:
 1. Upload the plugin files to the `/wp-content/plugins/spin360` directory, or Install as a regular WordPress plugin
 2. Go your Plugins page via WordPress Dashboard and activate it
 3. Use these shortcodes to post or page 
-
-   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=200 aspect_ratio=1.33333]`
-   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=200]`
-   `[spin360 imgs_folder="/wp-content/uploads/spin360show/spin360demo/"]`
-   defaults: imgs_nbr=200, aspect_ratio=1.33333
+[spin360 canvas_name="s1" imgs_folder="/wp-content/uploads/spin360show/a_mtx/" imgs_nbr=100 aspect_ratio=1.33333]
+   `[spin360 canvas_name="s1" imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=200 aspect_ratio=1.33333]`
+   `[spin360 canvas_name="s1" imgs_folder="/wp-content/uploads/spin360show/spin360demo/" imgs_nbr=100]`
+   `[spin360 canvas_name="s1" imgs_folder="/wp-content/uploads/spin360show/spin360demo/"]`
+   defaults: canvas_name="s1" imgs_nbr=200, aspect_ratio=1.33333
    
 4. Use `jpg` image files to display your model as a dynamic sequence; 
    Name your images as following: `0001.jpg, 0002.jpg, ..., 200.jpg`
@@ -51,6 +52,7 @@ Live Preview:
 
 Shortcode Parameters:
 
+* canvas_name = canvas name needed in case of multiple shows on the same page
 * imgs_folder = folder of image sequence project; i.e.: "/wp-content/uploads/spin360show/spin360demo/"
 * imgs_nbr = any number > 1; i.e.: 200 image screenshots
 * aspect_ratio = any number i.e.: 1.3333  for 4/3 aspect ratio
@@ -68,6 +70,8 @@ Basic version, still under development
 Basic version updated, still under development
 = 1.0.2 =
 Basic version with shortcode, still under development
+= 1.0.3 =
+Basic version with shortcode and multiple shows, still under development
 
 == Screenshots ==
 
@@ -82,3 +86,5 @@ Basic version with shortcode, still under development
 * Basic version updated
 = 1.0.2 =
 * Basic version with shortcode
+= 1.0.3 =
+Basic version with shortcode and multiple shows
