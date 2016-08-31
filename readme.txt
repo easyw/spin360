@@ -19,6 +19,7 @@ Responsive Web Design
 Displays 3D model on wordPress page, post, or custom page
 3D model Rotation enabled
 Based on a sequence of images to display the product
+Images can be generated with Blender animation
 
 Download Wordpress Plugin page: https://easyw.github.io/spin360/
 GitHub Wordpress Plugin: https://github.com/easyw/spin360
@@ -46,6 +47,7 @@ Live Preview:
    
 4. Use `jpg` image files to display your model as a dynamic sequence; 
    Name your images as following: `0001.jpg, 0002.jpg, ..., 200.jpg`
+   for 3D models the image sequence can be generated using Blender
    upload your project image files in a "/wp-content/uploads/" subfolder (i.e "/wp-content/uploads/spin360show/spin360demo/")
    via a standard FTP access
 
