@@ -19,6 +19,7 @@ Responsive Web Design
 Displays 3D model on wordPress page, post, or custom page
 3D model Rotation enabled
 Based on a sequence of images to display the product
+
 Download Wordpress Plugin page: https://easyw.github.io/spin360/
 GitHub Wordpress Plugin: https://github.com/easyw/spin360
 jQuery plugin page: http://spritespin.ginie.eu/
