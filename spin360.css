@@ -1,13 +1,6 @@
 /* CSS file for wordpress spin360 plugin */
 
-/* .spritespin {
-// background-image: url(/wp-content/plugins/spin360/ajax-loader.gif);background-position: 50% 50%;background-repeat: no-repeat; 
-  background-image: url(./ajax-loader.gif);background-position: 50% 20%;background-repeat: no-repeat;
-} */
-
-/* .spritespin{
-   position:relative;
-} */
 .buttonSS{
-   z-index: 100; position:absolute; left:20; bottom:5; /*color:DeepSkyBlue;*/
+   z-index: 100; cursor: pointer; position:absolute;
+   top:5; list-style-type:none; color:DeepSkyBlue;
 }
