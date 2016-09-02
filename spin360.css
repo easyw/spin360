@@ -1,6 +1,188 @@
 /* CSS file for wordpress spin360 plugin */
 
-.buttonSS{
+/* =Normalize
+-----------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* =Buttons
+-----------------------------------------------------------------------------*/
+.btnSS {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  /* color: #333; */
+  color:DeepSkyBlue;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  cursor: pointer;
+  background: #eeeded;
+  padding: 7px 16px;
+  height: 2.0em; }
+  .btnSS:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background: #dbdada; }
+
+input[type="submit"].btnSS {
+  -webkit-appearance: none; }
+
+.btnSS-small {
+  font-size: 11px;
+  padding: 7px 16px; }
+
+.btnSS-outline {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 19px; }
+  .btnSS-outline.btnSS-small {
+    padding: 6px 15px; }
+
+.btnSS-blue,
+.btnSS-red,
+.btnSS-green,
+.btnSS-black {
+  color: #fff; }
+  .btnSS-blue:hover,
+  .btnSS-red:hover,
+  .btnSS-green:hover,
+  .btnSS-black:hover {
+    color: rgba(255, 255, 255, 0.7); }
+
+.btnSS-white {
+  background: #fff; }
+  .btnSS-white:hover {
+    background: #f2f2f2; }
+
+.btnSS-white.btnSS-outline {
+  background: none;
+  border-color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85); }
+  .btnSS-white.btnSS-outline:hover {
+    color: rgba(0, 0, 0, 0.9);
+    background: #fff; }
+
+.btnSS-blue {
+  background: #3d58a8; }
+  .btnSS-blue:hover {
+    background: #2f4483; }
+
+.btnSS-red {
+  background: #d70a16; }
+  .btnSS-red:hover {
+    background: #a60811; }
+
+.btnSS-green {
+  background: #159776; }
+  .btnSS-green:hover {
+    background: #0f6a53; }
+
+.btnSS-yellow {
+  background: #fddc43;
+  color: #000; }
+  .btnSS-yellow:hover {
+    background: #e7be02; }
+
+.btnSS-black {
+  background: #000; }
+  .btnSS-black:hover {
+    background: #333333; }
+
+.btnSS-active,
+.btnSS[disabled],
+.btnSS-disabled {
+  border: none;
+  background: none;
+  background-color: #dbdada;
+  color: rgba(0, 0, 0, 0.5); }
+  .btnSS-active:hover,
+  .btnSS[disabled]:hover,
+  .btnSS-disabled:hover {
+    color: rgba(0, 0, 0, 0.5); }
+
+.btnSS-active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset; }
+
+.btnSS[disabled],
+.btnSS-disabled {
+  cursor: default;
+  box-shadow: none; }
+
+.btnSS-blue.btnSS-active,
+.btnSS-red.btnSS-active,
+.btnSS-green.btnSS-active,
+.btnSS-black.btnSS-active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) inset; }
+
+.btnSS-blue.btnSS-active,
+.btnSS-red.btnSS-active,
+.btnSS-green.btnSS-active,
+.btnSS-black.btnSS-active,
+.btnSS-blue.btnSS-disabled,
+.btnSS-red.btnSS-disabled,
+.btnSS-green.btnSS-disabled,
+.btnSS-black.btnSS-disabled,
+.btnSS-blue[disabled],
+.btnSS-red[disabled],
+.btnSS-green[disabled],
+.btnSS-black[disabled] {
+  color: rgba(255, 255, 255, 0.6); }
+  .btnSS-blue.btnSS-active:hover,
+  .btnSS-red.btnSS-active:hover,
+  .btnSS-green.btnSS-active:hover,
+  .btnSS-black.btnSS-active:hover,
+  .btnSS-blue.btnSS-disabled:hover,
+  .btnSS-red.btnSS-disabled:hover,
+  .btnSS-green.btnSS-disabled:hover,
+  .btnSS-black.btnSS-disabled:hover,
+  .btnSS-blue[disabled]:hover,
+  .btnSS-red[disabled]:hover,
+  .btnSS-green[disabled]:hover,
+  .btnSS-black[disabled]:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.btnSS-white.btnSS-active,
+.btnSS-white.btnSS-disabled,
+.btnSS-white[disabled] {
+  background: #f2f2f2; }
+
+.btnSS-blue.btnSS-active,
+.btnSS-blue.btnSS-disabled,
+.btnSS-blue[disabled] {
+  background: #2f4483; }
+
+.btnSS-red.btnSS-active,
+.btnSS-red.btnSS-disabled,
+.btnSS-red[disabled] {
+  background: #a60811; }
+
+.btnSS-green.btnSS-active,
+.btnSS-green.btnSS-disabled,
+.btnSS-green[disabled] {
+  background: #0f6a53; }
+
+.btnSS-yellow.btnSS-active,
+.btnSS-yellow.btnSS-disabled,
+.btnSS-yellow[disabled] {
+  background: #e7be02; }
+
+.btnSS-black.btnSS-active,
+.btnSS-black.btnSS-disabled,
+.btnSS-black[disabled] {
+  background: #4d4d4d; }
+
+  
+/*.buttonSS{
    z-index: 100; cursor: pointer; position:absolute;
    top:5; list-style-type:none; color:DeepSkyBlue;
-}
+}*/

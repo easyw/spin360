@@ -55,6 +55,7 @@ function spin360_shortcode($atts) {
     ), $atts, 'spin360' );
 
     $canvas_name = $spin360_atts[ 'canvas_name' ];
+    $canvas_nameFS = $canvas_name.'FS';
     $folder = "imgs_folder='".$spin360_atts[ 'imgs_folder' ]."'";
     // $wp_uploads = wp_upload_dir();
     // $folder_url = $wp_uploads['baseurl'].'/spin360show/'.$spin360_atts[ 'imgs_folder' ];
@@ -66,12 +67,14 @@ function spin360_shortcode($atts) {
     $purl=plugins_url();
     $bkg_loader=$purl."/spin360/ajax-loader.gif";
 
-    return "<ul id='commands'><li id='$canvas_name' class='buttonSS js-reverse'><br>Play</li></ul>
-    <div class='$canvas_name' style='background-image: url(\"$bkg_loader\");background-position: 50% 20%;background-repeat: no-repeat;position:relative;'>
+    return "<a id='$canvas_name' class='btnSS js-reverse'>Rev</a>
+    <!-- a id='$canvas_nameFS' class='btnSS js-fullscreen'>F-S</a -->
+    <!-- ul id='commands'><li id='$canvas_name' class='buttonSS js-reverse'><br>Play</li></ul -->
+    <div class='$canvas_name' style='background-image: url(\"$bkg_loader\");background-position: 50% 50%;background-repeat: no-repeat;position:relative;'>
     </div><a href='#'></a>
     <script type='text/javascript'>// <![CDATA[
        jQuery(function(){ 
-           jQuery('a.js-fullscreen').click(function(e){ e.preventDefault();jQuery('.$canvas_name').spritespin('api').requestFullscreen(); });
+           jQuery('#$canvas_nameFS').click(function(e){ e.preventDefault();jQuery('.$canvas_name').spritespin('api').requestFullscreen(); });
            jQuery('a.js-start').click(function(e){ e.preventDefault();jQuery('.$canvas_name').spritespin('api').startAnimation(); });
            jQuery('a.js-stop').click(function(e){ e.preventDefault(); jQuery('.$canvas_name').spritespin('api').stopAnimation(); });
            jQuery('#$canvas_name').click(function(e){ console.log('$canvas_name'); 
