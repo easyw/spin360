@@ -1,14 +1,14 @@
-=== Spin360 360deg and 3D Model Viewer using image sequences ===
+=== Spin 360 deg and 3D Model Viewer ===
 Contributors: maui2wp
 Donate link: 
-Tags: 360 deg viewer, 3d viewer, 3D model viewer, 3d model display, 3D Model Viewer WordPress
+Tags: 360 deg viewer, 3d viewer, 3D model viewer, 3d model display, 3D Model Viewer WordPress, 360, 360 product view, 360 product viewer, 3d product viewer, 3d, 360 product rotation
 Requires at least: 4.0.1
 Tested up to: 4.3
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin to add 360 rotation support and 3d view animation in wordpress using shortcodes
+A plugin to add 360 rotation support and 3d view animation in wordpress using shortcodes;
 Responsive Web Design
 3D model Rotation, 360 deg view.
 
@@ -21,18 +21,20 @@ Displays 3D model on wordPress page, post, or custom page
 Based on a sequence of images to animate and display the product
 Images can be generated with Blender animation
 
+####Demo####
+[Live Demo 3D](https://easyw.github.io/spin360/ "3d viewer plugin")
+
 Download Wordpress Plugin page: https://easyw.github.io/spin360/; 
+
 GitHub Wordpress Plugin: https://github.com/easyw/spin360; 
+
 jQuery plugin page: http://spritespin.ginie.eu/;
 
-Plugin Features
-
+####Plugin Features####
 * 3D model Display
 * 360 deg and 3D view enabled
 * ShortCodes System
 * Very Lightweight
-
-Live Preview: 
 
 == Installation ==
 
