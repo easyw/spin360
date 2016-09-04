@@ -3,7 +3,7 @@
 Plugin Name: Spin360
 Plugin URI:  https://easyw.github.io/spin360/
 Description: A new plugin to add 360 rotation support in wp
-Version:     1.0.5
+Version:     1.0.6
 Author:      Maurice
 Author URI:  https://github.com/easyw/spin360
 License:     GPL2License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -83,7 +83,7 @@ function spin360_shortcode($atts) {
            pathVar=pathVar+'{frame}.jpg';
            // console.log(pathVar);
            // console.log('$bkg_loader');
-           jQuery('.$canvas_name').spritespin({width: 400, height: '$height', source: SpriteSpin.sourceArray(pathVar, { frame: [1,'$imgs_nbr'], digits: 4 }), sense: -1, responsive: true });
+           jQuery('.$canvas_name').spritespin({width: 400, height: '$height', source: SpriteSpin.sourceArray(pathVar, { frame: [1,'$imgs_nbr'], digits: 4 }), sense: 1, responsive: true });
            })
     // ]]></script>"
 ;}

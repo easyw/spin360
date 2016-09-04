@@ -94,6 +94,9 @@ Basic version with shortcode and multiple shows, still under development
 Basic version with shortcode and multiple shows, with relative upload folder path
 = 1.0.5 =
 Basic version with shortcode and multiple shows, relative upload folder path and Play button
+= 1.0.6 =
+Basic version with shortcode and multiple shows, relative upload folder path and Play button
+with natural sense of interaction
 
 == Screenshots ==
 
@@ -115,3 +118,6 @@ Basic version with shortcode and multiple shows
 Basic version with shortcode, multiple shows and relative upload folder path
 = 1.0.5 =
 Basic version with shortcode and multiple shows, relative upload folder path and Play button
+= 1.0.6 =
+Basic version with shortcode and multiple shows, relative upload folder path and Play button
+with natural sense of interaction
