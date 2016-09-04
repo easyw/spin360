@@ -3,8 +3,8 @@ Contributors: maui2wp
 Donate link: 
 Tags: 360 deg viewer, 3d viewer, 3D model viewer, 3d model display, 3D Model Viewer WordPress, 360, 360 product view, 360 product viewer, 3d product viewer, 3d, 360 product rotation
 Requires at least: 4.0.1
-Tested up to: 4.3
-Stable tag: 4.3
+Tested up to: 4.6
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
